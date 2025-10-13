@@ -19,7 +19,7 @@ const AIMatch = () => {
     setAnalysis('');
 
     try {
-      const response = await axios.post('/api/ai/analyze', { jobDescription });
+      const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/ai/analyze`, { jobDescription });
       setAnalysis(response.data.analysis);
     } catch (err) {
       setError('Failed to get analysis. The server might be busy.');
