@@ -5,25 +5,25 @@ import { FaAward } from 'react-icons/fa'; // Example Icon
 // --- IMPORTANT: Customize this data with your achievements ---
 const achievementsData = [
   {
-    title: 'Certified Cybersecurity Expert',
-    issuer: 'CompTIA',
-    date: 'Oct 2025',
+    title: 'Advent of Cyber 2024',
+    issuer: 'THM',
+    date: 'Dec 2024',
     icon: <FaAward />,
-    image: '/images/certificates/cybersecurity-cert.png' // Path to your image in the /public folder
+    image: '/images/certificates/Advent_of_2024.png' 
   },
   {
-    title: 'Smart India Hackathon 2025 Winner',
-    issuer: 'SIH',
-    date: 'Sep 2025',
+    title: 'Codechef 500 Difficulty Rating',
+    issuer: 'Codechef',
+    date: 'Dec 2024',
     icon: <FaAward />,
-    image: '/images/certificates/sih-winner.png'
+    image: '/images/certificates/smack_whirl_82-500 difficulty rating.jpg'
   },
   {
-    title: 'MERN Stack Development Bootcamp',
-    issuer: 'Online University',
+    title: 'Bring AI to Work WorkShop',
+    issuer: 'Google Workspace',
     date: 'June 2025',
     icon: <FaAward />,
-    image: '/images/certificates/mern-bootcamp.png'
+    image: '/images/certificates/Bring_Ai.jpg'
   },
 ];
 

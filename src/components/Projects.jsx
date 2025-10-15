@@ -2,12 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { projectData } from '../data';
 
-// const projectData = [
-//   { title: "E-Commerce Platform", desc: "A full-stack MERN e-commerce site.", stack: ["React", "Node.js", "MongoDB"], live: "#", github: "#", img: "https://via.placeholder.com/400x300" },
-//   { title: "Cyber Threat Intel", desc: "Real-time threat intelligence dashboard.", stack: ["React", "Express", "APIs"], live: "#", github: "#", img: "https://via.placeholder.com/400x300" },
-//   { title: "College CTF Website", desc: "Vulnerable website for a CTF event.", stack: ["HTML", "CSS", "JS", "PHP"], live: "#", github: "#", img: "https://via.placeholder.com/400x300" }
-// ];
-
 const Projects = () => {
   return (
     <section className="py-20 px-4 md:px-16 lg:px-32">

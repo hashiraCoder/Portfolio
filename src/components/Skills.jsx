@@ -1,4 +1,4 @@
-// /client/src/components/Skills.jsx
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt } from 'react-icons/fa';
