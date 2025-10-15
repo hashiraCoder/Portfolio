@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@theme {
+  --color-neon-blue: #00BFFF;
+  --color-neon-purple: #9D4EDD;
+  --color-dark-bg: #0E0E10;
+}
+
+@utility animation-delay-4000 {
+  animation-delay: 4s;
+}
+body {
+   @apply text-gray-200;
+  font-family: 'Inter', sans-serif;
+}
