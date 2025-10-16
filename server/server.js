@@ -22,12 +22,9 @@ mongoose.connect(process.env.MONGO_URI)
 // API Routes
 app.use('/api/contact', contactRoutes);
 app.use('/api/ai', aiRoutes); // 2. Use the new routes
-app.get('/', (req, res) => {
-  res.send({
-    activeStatus: true,
-    error:false,
-})
-})
+app.get("/api/test", (req, res) => {
+  res.status(200).send("Backend is running!");
+});
 
 // Start the server
  app.listen(PORT, () => {
