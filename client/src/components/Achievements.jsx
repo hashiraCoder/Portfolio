@@ -25,6 +25,13 @@ const achievementsData = [
     icon: <FaAward />,
     image: '/images/certificates/Bring_Ai.jpg'
   },
+  {
+    title: 'Introduction to Cybersecurity Course',
+    issuer: 'Cisco Networking Academy',
+    date: 'March 2025',
+    icon: <FaAward />,
+    image: '/images/certificates/cisco.png'
+  },
 ];
 
 const Achievements = () => {

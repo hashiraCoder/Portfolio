@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaTerminal } from 'react-icons/fa';
 import { socialLinks } from '../data';
 
-const navLinks = ['Home', 'About', 'Skills', 'Achievements', 'Projects', 'GitHub', 'AIMatch', 'Contact'];
+// const navLinks = ['Home', 'About', 'Skills', 'Achievements', 'Projects', 'GitHub', 'AIMatch', 'Contact'];
+const navLinks = ['Home', 'About', 'Skills', 'Achievements', 'Projects', 'GitHub'];
+
 
 // --- ANIMATION LOGIC ---
 // This controls the "container" of the list, making items animate in sequence.

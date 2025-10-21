@@ -75,8 +75,8 @@ function App() {
         <div id="achievements"><Achievements /></div>
         <div id="projects"><Projects /></div>
         <div id="github"><GitHub /></div>
-        <div id="aimatch"><AIMatch /></div>
-        <div id="contact"><Contact /></div>
+       {/* <div id="aimatch"><AIMatch /></div>
+        <div id="contact"><Contact /></div> */}
       </main>
     </div>
   );
