@@ -32,7 +32,7 @@ const Projects = () => {
                     </div>
                     <div className="flex gap-4">
                         <a href={project.live} target="_blank" className="text-white font-semibold hover:text-neon-blue transition-colors">Live Demo</a>
-                        <a href={project.github} target="_blank" className="text-white font-semibold hover:text-neon-blue transition-colors">GitHub</a>
+                        {/* <a href={project.github} target="_blank" className="text-white font-semibold hover:text-neon-blue transition-colors">GitHub</a> */}
                     </div>
                 </motion.div>
             ))}
