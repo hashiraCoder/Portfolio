@@ -24,7 +24,7 @@ const Projects = () => {
                     transition={{ duration: 0.5, delay: index * 0.2 }}
                     className="bg-white/5 p-6 rounded-lg border border-white/10 group overflow-hidden relative transition-all duration-300 hover:border-neon-blue hover:shadow-glow-blue"
                 >
-                    <img src={project.img} alt={project.title} className="rounded-md mb-4 group-hover:scale-105 transition-transform duration-300"/>
+                    {/* <img src={project.img} alt={project.title} className="rounded-md mb-4 group-hover:scale-105 transition-transform duration-300"/> */}
                     <h3 className="text-2xl font-bold text-neon-purple mb-2">{project.title}</h3>
                     <p className="text-gray-400 mb-4">{project.desc}</p>
                     <div className="flex gap-2 mb-4">

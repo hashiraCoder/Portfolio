@@ -19,6 +19,13 @@ const achievementsData = [
     image: '/images/certificates/smack_whirl_82-500 difficulty rating.jpg'
   },
   {
+    title: 'Introduction to Cybersecurity Course',
+    issuer: 'Cisco Networking Academy',
+    date: 'March 2025',
+    icon: <FaAward />,
+    image: '/images/certificates/cisco.png'
+  },
+  {
     title: 'Bring AI to Work WorkShop',
     issuer: 'Google Workspace',
     date: 'June 2025',
@@ -26,11 +33,11 @@ const achievementsData = [
     image: '/images/certificates/Bring_Ai.jpg'
   },
   {
-    title: 'Introduction to Cybersecurity Course',
-    issuer: 'Cisco Networking Academy',
-    date: 'March 2025',
+    title: 'Hacker`s Gambit 2025',
+    issuer: 'JCOE Cyber Sentinels',
+    date: 'Oct 2025',
     icon: <FaAward />,
-    image: '/images/certificates/cisco.png'
+    image: '/images/certificates/Hacker_gambit_2025.pdf'
   },
 ];
 

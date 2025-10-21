@@ -76,7 +76,7 @@ const About = () => {
               className="text-lg text-gray-300 text-center md:text-left"
             >
                 <p>
-                    I am a passionate <span className="text-neon-purple font-bold">MERN stack developer</span> and certified <span className="text-neon-blue font-bold">cybersecurity expert</span>. With a knack for building robust and secure web applications, I transform complex problems into elegant, user-friendly solutions. My goal is to innovate and create technology that makes a difference.
+                    I am a passionate <span className="text-neon-purple font-bold">MERN stack developer</span> and <span className="text-neon-blue font-bold">cybersecurity enthusiast</span>. With a knack for building robust and secure web applications, I transform complex problems into elegant, user-friendly solutions. My goal is to innovate and create technology that makes a difference.
                 </p>
             </motion.div>
         </div>
