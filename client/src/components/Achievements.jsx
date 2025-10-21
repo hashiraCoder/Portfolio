@@ -37,7 +37,7 @@ const achievementsData = [
     issuer: 'JCOE Cyber Sentinels',
     date: 'Oct 2025',
     icon: <FaAward />,
-    image: '/images/certificates/Hacker_gambit_2025.pdf'
+    image: '/images/certificates/Hacker_gambit_2025.png'
   },
 ];
 
