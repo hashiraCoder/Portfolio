@@ -93,7 +93,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="mt-8 flex gap-4 justify-center"
         >
-          <a href="#" download className="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-neon-blue to-neon-purple transition-transform duration-300 hover:scale-105 hover:shadow-glow-blue">
+          <a href="/images/Resume_Shivam.pdf"  className="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-neon-blue to-neon-purple transition-transform duration-300 hover:scale-105 hover:shadow-glow-blue">
             Download Resume
           </a>
           <a href="#projects" className="px-6 py-3 rounded-full font-semibold text-white border-2 border-neon-blue transition-all duration-300 hover:bg-neon-blue/20 hover:shadow-glow-blue">
