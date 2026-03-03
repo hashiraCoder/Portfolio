@@ -48,7 +48,7 @@ const About = () => {
                   <motion.img
                     // The key now dynamically changes based on the state
                     key={showProfessional ? "professional" : "casual"}
-                    src={showProfessional ? "/images/shivam-professional.png" : "/images/shivam.jpg"}
+                    src={showProfessional ? "/images/shivam-professional.jpeg" : "/images/shivam-casual.jpeg"}
                     alt={showProfessional ? "Shivam - Professional" : "Shivam - Casual"}
                     className="relative w-full h-full object-cover rounded-full border-4 border-dark-bg"
                     initial={{ rotateY: 90, opacity: 0 }} // Start rotated 90 degrees (edge-on)

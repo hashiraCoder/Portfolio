@@ -6,7 +6,7 @@ export const aboutText = "I am a passionate MERN stack developer and cybersecuri
 export const socialLinks = [
   { name: 'LinkedIn', icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/shivam-kumar-986459343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
   { name: 'GitHub', icon: <FaGithub />, href: 'https://github.com/hashiraCoder' },
-  { name: 'CodeChef', icon: <SiCodechef />, href: 'https://www.codechef.com/users/smack_whirl_82' },
+  { name: 'CodeChef', icon: <SiCodechef />, href: 'https://www.codechef.com/users/hover_silk_44' },
   { name: 'TryHackMe', icon: <SiTryhackme />, href: 'https://tryhackme.com/p/kshivam' },
   { name: 'Email', icon: <FaEnvelope />, href: 'mailto:shivamkumar.code@gmail.com' },
 ];
