@@ -12,6 +12,7 @@ export const socialLinks = [
 ];
 
 export const projectData = [
-  { title: "Modern Portfolio", desc: "A full-stack MERN portfolio.", stack: ["React", "Node.js", "MongoDB"], live: "#", github: "#"}
+  { title: "Modern Portfolio", desc: "A full-stack MERN portfolio.", stack: ["React", "Node.js", "MongoDB"], live: "#", github: "#"},
   // { title: "Modern Portfolio", desc: "A full-stack MERN portfolio.", stack: ["React", "Node.js", "MongoDB"], live: "#", github: "#", img: "https://via.placeholder.com/400x300" }
+{ title: "Pathfinder", desc: "A MERN DSA based pathfinder.", stack: ["React", "Node.js", "TailwindCss"], live: "#", github: "#"}
 ];
