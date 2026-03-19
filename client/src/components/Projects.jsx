@@ -14,7 +14,10 @@ const Projects = () => {
           Featured <span className="text-neon-blue">Projects</span>
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projectData.map((project, index) => (
+            {projectData.map((project, index) => {
+              const hasLiveDemo = Boolean(project.live && project.live !== '#');
+
+              return (
                 <motion.div 
                     key={index}
                     initial={{ opacity: 0, y: 50, scale: 0.9 }}
@@ -30,11 +33,17 @@ const Projects = () => {
                         {project.stack.map(tech => <span key={tech} className="bg-neon-blue/20 text-neon-blue text-xs font-bold px-2 py-1 rounded-full">{tech}</span>)}
                     </div>
                     <div className="flex gap-4">
-                        <a href={project.live} target="_blank" className="text-white font-semibold hover:text-neon-blue transition-colors">Live Demo</a>
+                      {hasLiveDemo ? (
+                        <a href={project.live} target="_blank" rel="noreferrer" className="text-white font-semibold hover:text-neon-blue transition-colors">Live Demo</a>
+                      ) : (
+                        <span className="text-gray-500 font-semibold cursor-not-allowed">Live Demo (Soon)</span>
+                      )}
+                      {<a href={project.github} target="_blank" className="text-white font-semibold hover:text-neon-blue transition-colors">GitHub</a>}
                         {/* <a href={project.github} target="_blank" className="text-white font-semibold hover:text-neon-blue transition-colors">GitHub</a> */}
                     </div>
                 </motion.div>
-            ))}
+                );
+              })}
         </div>
     </section>
   );
