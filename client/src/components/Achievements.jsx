@@ -38,7 +38,13 @@ const achievementsData = [
     date: 'Oct 2025',
     icon: <FaAward />,
     image: '/images/certificates/Hacker_gambit_2025.png'
-  },
+  },{
+    title: 'CodeFest 2026',
+    issuer: 'IIT BHU',
+    date: 'March 2026',
+    icon: <FaAward />,
+    image: '/images/certificates/codeFest-iitbhu.jpg'
+  }
 ];
 
 const Achievements = () => {
