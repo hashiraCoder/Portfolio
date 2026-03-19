@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Terminal from 'react-console-emulator';
 import { aboutText, projectData, socialLinks } from '../data';
 
 const WebTerminal = ({ closeTerminal }) => {
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') {
+        closeTerminal();
+      }
+    };
+
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [closeTerminal]);
+
   const commands = {
     // Renamed 'help' to 'menu' to avoid conflict
     menu: {
@@ -37,6 +48,20 @@ Custom Commands:
           return 'No social links found.';
         }
         return socialLinks.map(s => `- ${s.name}: ${s.href}`).join('\n');
+      },
+    },
+    exit: {
+      description: 'Closes the terminal modal.',
+      fn: () => {
+        closeTerminal();
+        return 'Closing terminal...';
+      },
+    },
+    close: {
+      description: 'Alias for exit command.',
+      fn: () => {
+        closeTerminal();
+        return 'Closing terminal...';
       },
     },
   };
