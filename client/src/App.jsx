@@ -48,7 +48,7 @@ function App() {
  {/* 1. This button is now hidden on mobile (md:block) */}
  <button 
         onClick={() => setIsTerminalOpen(true)}
-        className="hidden md:block fixed top-4 right-4 z-50 p-2 text-xl text-gray-400 hover:text-neon-blue transition-colors"
+   className="hidden md:block fixed top-4 right-4 z-40 p-2 text-xl text-gray-400 hover:text-neon-blue transition-colors"
         aria-label="Open Terminal"
       >
         <FaTerminal />
@@ -62,7 +62,7 @@ function App() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: '-100vh', opacity: 0 }}
             transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-            className="fixed inset-0 z-50 w-full h-full p-4 md:p-0"
+            className="fixed inset-0 z-[120] w-full h-full p-4 md:p-0"
             role="dialog"
             aria-modal="true"
             aria-label="Portfolio terminal"
@@ -71,7 +71,7 @@ function App() {
             <div className="relative w-full h-full" onClick={(e) => e.stopPropagation()}>
               <button
                 onClick={() => setIsTerminalOpen(false)}
-                className="absolute top-3 right-3 z-[60] p-2 rounded-md bg-black/40 border border-white/20 text-gray-200 hover:text-neon-blue hover:border-neon-blue transition-colors"
+                className="absolute top-3 right-3 z-[130] p-2 rounded-md bg-black/40 border border-white/20 text-gray-200 hover:text-neon-blue hover:border-neon-blue transition-colors"
                 aria-label="Close Terminal"
                 title="Close terminal (Esc)"
               >
