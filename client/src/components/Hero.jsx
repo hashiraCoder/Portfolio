@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import ParticleBackground from './ParticleBackground';
@@ -41,19 +41,24 @@ const letterVariants = {
 // --- END OF ANIMATION LOGIC ---
 
 const Hero = () => {
+  const [showHeroEnhancements, setShowHeroEnhancements] = useState(false);
+
+  useEffect(() => {
+    const timerId = window.setTimeout(() => {
+      setShowHeroEnhancements(true);
+    }, 150);
+
+    return () => window.clearTimeout(timerId);
+  }, []);
+
   return (
     <section className="h-screen flex items-center justify-center text-center relative overflow-hidden bg-[#000011]">
-      <ParticleBackground />
+      {showHeroEnhancements && <ParticleBackground />}
 
       <div className="relative z-10 px-4">
-        <motion.p
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-gray-400"
-        >
+        <p className="text-lg md:text-xl text-gray-400">
           {getGreeting()}
-        </motion.p>
+        </p>
 
         {/* --- THIS IS THE UPDATED H1 TAG --- */}
         <motion.h1
@@ -75,17 +80,21 @@ const Hero = () => {
         {/* --- END OF UPDATE --- */}
         
         <div className="text-xl md:text-3xl text-gray-300 h-10">
-          <TypeAnimation
-            sequence={[
-              'Full Stack Web Developer', 2000,
-              'MERN Stack Specialist', 2000,
-              'Node.js Expert', 2000,
-              'Cyber Enthusiast', 2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-          />
+          {showHeroEnhancements ? (
+            <TypeAnimation
+              sequence={[
+                'Full Stack Web Developer', 2000,
+                'MERN Stack Specialist', 2000,
+                'Node.js Expert', 2000,
+                'Cyber Enthusiast', 2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          ) : (
+            <span>Full Stack Web Developer</span>
+          )}
         </div>
         <motion.div
           initial={{ y: 20, opacity: 0 }}
