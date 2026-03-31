@@ -43,7 +43,7 @@ const achievementsData = [
     issuer: 'IIT BHU',
     date: 'March 2026',
     icon: <FaAward />,
-    image: '/images/certificates/codeFest-iitbhu.jpg'
+    image: '/images/certificates/codeFest-iitbhu.jpeg'
   }
 ];
 
